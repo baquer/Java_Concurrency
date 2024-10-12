@@ -20,7 +20,7 @@ public class ThreadPoolExecutorExample {
                     Thread.sleep(5000);
                     System.out.println("Thread Name is " + Thread.currentThread().getName());
                 } catch (Exception e) {
-                    logger.log(Level.INFO, "Exception {0} occurred in Thread {}", new Object[]{e.getMessage(), Thread.currentThread().getName()});
+                    logger.log(Level.INFO, "Exception {0} occurred in Thread {1}", new Object[]{e.getMessage(), Thread.currentThread().getName()});
                 }
             });
         }
